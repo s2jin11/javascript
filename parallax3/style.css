@@ -1,0 +1,84 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+
+
+a{text-decoration: none;}
+.clearfix::after{
+    content: "";
+    clear:both;
+    display: block;
+}
+
+
+.nav{
+    position: fixed;
+    top: 0; left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(255,255,255,0.3);
+    z-index: 100;
+}
+.nav h1{
+    color: #fff;
+    font-size: 40px; 
+    text-align: center;
+    text-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+.nav ul{}
+.nav ul li{
+    border-left: 5px solid transparent;
+}
+.nav ul li a{
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    padding: 15px 20px ;
+    text-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+.nav ul li.active{
+    background: rgba(255,255,255,0.4);
+    border-left: 5px solid #fff;
+}
+.nav .navBtn{
+    position: absolute;
+    right:-60px; top: 0;
+    width: 50px; height:50px;
+    background: rgba(255,255,255,0.4);
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 50%;
+}
+
+
+
+
+#contents{}
+#contents div{height: 100vh;}
+#contents div h2{
+    position: relative;
+    top: 30%;
+    text-align: center;
+    color: #fff;
+    font-size: 90px;
+}
+
+#contents div#section1{
+    background: linear-gradient(to right, #654ea3, #eaafc8); 
+}
+#contents div#section2{
+    background: linear-gradient(to right, #c94b4b, #4b134f);
+}
+#contents div#section3{
+    background: linear-gradient(to right, #00b09b, #96c93d);
+}
+#contents div#section4{
+    background: linear-gradient(to right, #283c86, #45a247);
+}
+#contents div#section5{
+    background: linear-gradient(to right, #44a08d, #093637); 
+}
+#contents div#section6{
+    background: linear-gradient(to right, #ff5f6d, #ffc371); 
+}
